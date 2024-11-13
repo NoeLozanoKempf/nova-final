@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Café</title>
+    <!-- Fuentes -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- WhatsApp -->
+    <link
+      rel="stylesheet"
+      href="./vendors/jquery.whatsapp/venom-button.min.css"
+    />
+
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/estilos.css" />
+
+    <!-- Video-js -->
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <img src="./img/logo.png" alt="Logo Nova" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 200px"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quienes-somos.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="preguntas-frecuentes.html"
+                  >Preguntas Frecuentes</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="video-banner">
+      <div class="section-banner-information">
+        <h1>Nova Café</h1>
+        <h2>SIEMPRE CERCA</h2>
+        <div>
+          <p>Blends, variedades, cafés del mundo.</p>
+          <p>Encontrá tu Tienda más cercana y tentate con nuestros sabores.</p>
+        </div>
+        <a
+          class="button-fill-nova underline"
+          role="button"
+          href="productos.html"
+          >Compra hoy</a
+        >
+      </div>
+      <!-- The ID is required for the plug -->
+      <video id="my-video" autoplay muted loop>
+        <source src="./img/video-banner.mp4" type="video/mp4" />
+      </video>
+    </section>
+
+    <!-- Nuestras delicias -->
+    <section class="product-section py-5 text-center">
+      <div class="container">
+        <h2 class="mb-5 title-nova">Nuestras delicias</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card-container text-center">
+              <img
+                src="./img/latte.png"
+                alt="Variedad de Café"
+                class="mb-3 rounded-img-nova img-fluid"
+              />
+              <h3 class="sub-title-nova">Variedad de Café</h3>
+              <p>
+                Descubre nuestra exquisita selección de cafés, cuidadosamente
+                preparados por nuestros baristas. Desde el intenso espresso
+                hasta el cremoso cappuccino.
+              </p>
+              <a
+                class="button-fill-nova underline"
+                role="button"
+                href="productos.html"
+                >Ver más</a
+              >
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card-container text-center">
+              <img
+                src="./img/blends.png"
+                alt="Blends"
+                class="mb-3 rounded-img-nova img-fluid"
+              />
+              <h3 class="sub-title-nova">Blends</h3>
+              <p>
+                Explora una selección de granos cuidadosamente mezclados para
+                ofrecer sabores únicos y equilibrados en cada taza. Perfecto
+                para amantes del buen café.
+              </p>
+              <a
+                class="button-fill-nova underline"
+                role="button"
+                href="productos.html"
+                >Ver más</a
+              >
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card-container text-center">
+              <img
+                src="./img/galletitas.png"
+                alt="Pastelería"
+                class="mb-3 rounded-img-nova img-fluid"
+              />
+              <h3 class="sub-title-nova">Pastelería</h3>
+              <p>
+                Explora nuestra deliciosa selección de productos, que incluyen
+                tanto opciones dulces como saladas. Cada bocado está hecho con
+                ingredientes de calidad.
+              </p>
+              <a
+                class="button-fill-nova underline"
+                role="button"
+                href="productos.html"
+                >Ver más</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel Testimonios -->
+
+    <section class="reviews-section py-5">
+      <div class="container text-center">
+        <h2 class="title-nova mb-5">Testimonios</h2>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div>
+              <img
+                src="./img/reseña-1.png"
+                alt="Mariano Cervantes"
+                style="max-width: 94px; margin: auto"
+              />
+              <h4>Martín Segovia</h4>
+              <p>
+                Excelente lugar y atención, el café como siempre exquisito.
+                Recomiendo la chocotorta y el chipá.
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div>
+              <img
+                src="./img/reseña-2.png"
+                alt="Mariano Cervantes"
+                style="max-width: 94px; margin: auto"
+              />
+              <h4>Belén Mariani</h4>
+              <p>
+                Riquísimo! Siempre impecable. El café es de los más ricos que
+                probé!
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div>
+              <img
+                src="./img/reseña-3.png"
+                alt="Mariano Cervantes"
+                style="max-width: 94px; margin: auto"
+              />
+              <h4>Mariano Cervantes</h4>
+              <p>
+                Excelente lugar para hacer un break del día y tomar y/o comer
+                algo rico! Muy buena atención.
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div>
+              <img
+                src="./img/reseña-4.jpg"
+                alt="Mariano Cervantes"
+                style="max-width: 94px; margin: auto; border-radius: 50%"
+              />
+              <h4>Florencia Gozález</h4>
+              <p>
+                Excelente lugar para hacer una pausa y disfrutar de un café o
+                comida rica. Muy buena atención.
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div>
+              <img
+                src="./img/reseña-5.jpg"
+                alt="Mariano Cervantes"
+                style="max-width: 94px; margin: auto; border-radius: 50%"
+              />
+              <h4>Mirtha Rodriguez</h4>
+              <p>
+                Un lugar ideal para disfrutar de un café delicioso y comida
+                sabrosa. Atención impecable
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Whatsapp -->
+    <div id="wapp"></div>
+
+    <!-- Footer -->
+    <footer class="mt-4 d-flex justify-content-center align-items-center">
+      <div class="container text-center">
+        <div
+          class="d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center"
+        >
+          <img src="./img/logo.png" alt="logo nova" />
+          <ul class="d-flex flex-column flex-md-row gap-4">
+            <li>
+              <a href="quienes-somos.html" class="nav-link"> Quienes somos </a>
+            </li>
+            <li>
+              <a href="quienes-somos.html" class="nav-link"> Servicios </a>
+            </li>
+            <li>
+              <a href="productos.html" class="nav-link"> Productos </a>
+            </li>
+            <li>
+              <a href="preguntas-frecuentes.html" class="nav-link">
+                Preguntas Frecuentes
+              </a>
+            </li>
+            <li>
+              <a href="contacto.html" class="nav-link"> Contacto </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <a href="https://x.com/home" class="text-white mx-2">
+            <img src="./img/x.png" alt="" />
+          </a>
+          <a href="https://www.facebook.com" class="text-white mx-2"
+            ><img src="./img/facebook.png" alt=""
+          /></a>
+          <a href="https://www.instagram.com/" class="text-white mx-2"
+            ><img src="./img/instagram.png" alt=""
+          /></a>
+        </div>
+        <hr />
+        <p class="copy d-none d-md-block">
+          © Copyright 2024, ORT Desarrollo & Programación - 1° 2° B -
+          Pietrafesa, Lozano
+        </p>
+
+        <p class="copy d-md-none">© Copyright 2024, ORT Desarrollo II</p>
+      </div>
+    </footer>
+
+    <!-- jquery -->
+    <script src="./vendors/jquery-3.7.1.min.js"></script>
+
+    <!-- Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Inicialización de Owl Carousel -->
+    <script>
+      function initializeCarousel() {
+        const isMobile = window.innerWidth < 768;
+        $('.owl-carousel').owlCarousel({
+          items: isMobile ? 1 : 3, // Cambia el número de elementos según el tamaño de pantalla
+          loop: true,
+          margin: 0,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+        });
+      }
+
+      $(document).ready(function () {
+        initializeCarousel(); // Inicializar el carrusel al cargar la página
+
+        // Detectar el cambio de tamaño de la ventana
+        $(window).resize(function () {
+          $('.owl-carousel').trigger('destroy.owl.carousel'); // Destruye el carrusel existente
+          initializeCarousel(); // Vuelve a inicializar el carrusel con los nuevos valores
+        });
+      });
+    </script>
+    <!-- End Carousel -->
+
+    <!-- Video.js -->
+    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+
+    <script src="./js/scripts.js"></script>
+
+    <!-- bootstrap -->
+    <script src="./vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Whatsapp -->
+    <script src="./vendors/jquery.whatsapp/venom-button.min.js"></script>
+
+    <script>
+      'use strict';
+
+      $(document).ready(function () {
+        // chatear con WAPP
+        $('#wapp').venomButton({
+          phone: '541139102074',
+          chatMessage: 'Contacto',
+          message: 'Quiero hacer una consulta',
+          nameClient: 'Mi proyecto DES2',
+          showPopup: true,
+        });
+      });
+    </script>
+  </body>
+</html>
